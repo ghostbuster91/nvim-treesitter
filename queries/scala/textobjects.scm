@@ -13,4 +13,11 @@
 (class_parameter
   name: (identifier) @parameter.inner) @parameter.outer
 
+(case_clause
+  pattern: (_) @case.pattern
+  body: (_) @case.inner) @case.outer
+
+(enumerator 
+  (identifier) (_) @enumerator.inner) @enumerator.outer
+
 (comment) @comment.outer
